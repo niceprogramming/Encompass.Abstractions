@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Encompass.Automation.SDK" Version="21.3.0" />
+    <PackageReference Include="fasterflect" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Client">
+      <HintPath>Libs\Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientServer">
+      <HintPath>Libs\ClientServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EMBAM15">
+      <HintPath>Libs\EMBAM15.dll</HintPath>
+    </Reference>
+    <Reference Include="EMCommon">
+      <HintPath>Libs\EMCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="EMLoanUtils15">
+      <HintPath>Libs\EMLoanUtils15.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

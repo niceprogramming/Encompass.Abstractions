@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encompass.Abstractions", "Encompass.Abstractions\Encompass.Abstractions.csproj", "{3570B1C0-1CD4-407F-9533-B9DAF56B30D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encompass.Abstractions", "Encompass.Abstractions\Encompass.Abstractions.csproj", "{3570B1C0-1CD4-407F-9533-B9DAF56B30D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encompass.Abstractions.Generator", "Encompass.Abstractions.Generator\Encompass.Abstractions.Generator.csproj", "{E4FD6C16-EB37-4413-823D-72EA81BA6BA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3570B1C0-1CD4-407F-9533-B9DAF56B30D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3570B1C0-1CD4-407F-9533-B9DAF56B30D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3570B1C0-1CD4-407F-9533-B9DAF56B30D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FD6C16-EB37-4413-823D-72EA81BA6BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FD6C16-EB37-4413-823D-72EA81BA6BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FD6C16-EB37-4413-823D-72EA81BA6BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FD6C16-EB37-4413-823D-72EA81BA6BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
