@@ -53,7 +53,7 @@ namespace Encompass.Abstractions.Sample.Tests
             var macros = new Mock<IMacro>();
             var loan = new Mock<ILoan>();
             var fields = new Mock<ILoanFields>(MockBehavior.Strict);
-
+            
             var fee = String.Empty;
             fields.SetupGet(x => x["11"]).Returns(new FakeLoanField("11", "lmao"));
             fields.SetupSet(x => x["367"].Value = It.IsAny<string>()).Callback((object value) => fee = value.ToString() );

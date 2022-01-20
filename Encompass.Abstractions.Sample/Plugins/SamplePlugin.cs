@@ -23,6 +23,17 @@ namespace Encompass.Abstractions.Sample.Plugins
             base.Activate();
         }
 
+        public override void Deactivate()
+        {
+            EncompassApplication.LoanOpened -= LoanOpened;
+            EncompassApplication.LoanClosing -= LoanClosing;
+            if (EncompassApplication.CurrentLoan != null)
+            {
+                EncompassApplication.CurrentLoan.FieldChange -= FieldChange;
+            }
+            base.Deactivate();
+        }
+
         private void LoanOpened(object sender, EventArgs e)
         {
             EncompassApplication.CurrentLoan.FieldChange += FieldChange;

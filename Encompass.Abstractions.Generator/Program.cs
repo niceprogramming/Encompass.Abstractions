@@ -26,8 +26,6 @@ namespace Encompass.Abstractions.Generator
                 typeof(Session),
                 typeof(Users),
                 typeof(Macro),
-                typeof(StateLicense),
-                typeof(StateLicenses),
                 typeof(Loan),
                 typeof(LoanFields),
                 typeof(LoanField),

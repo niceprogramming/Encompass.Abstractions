@@ -2,9 +2,7 @@ using System;
 using EllieMae.Encompass.BusinessObjects;
 using EllieMae.Encompass.BusinessObjects.Users;
 using EllieMae.Encompass.Collections;
-using Encompass.Abstractions.BusinessObjects.Users;
 using Encompass.Abstractions.Client;
-using IStateLicenses = Encompass.Abstractions.BusinessObjects.Users.IStateLicenses;
 
 namespace Encompass.Abstractions.BusinessObjects.Users
 {
@@ -142,7 +140,7 @@ namespace Encompass.Abstractions.BusinessObjects.Users
             set => _user.PeerLoanAccessRight = value;
         }
 
-        public IStateLicenses StateLicenses => (StateLicensesWrapper) _user.StateLicenses;
+        public StateLicenses StateLicenses => _user.StateLicenses;
 
         public int OrganizationID => _user.OrganizationID;
 
