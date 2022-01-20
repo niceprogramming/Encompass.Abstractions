@@ -24,18 +24,21 @@ namespace Encompass.Abstractions.Generator
                     "Unable to create code for types in the EllieMae.EMLite namespaces");
             }
 
-            var test = dependency.GetConstructors(BindingFlags.Instance|BindingFlags.NonPublic);
-            
             _current.Push(dependency);
             var name = dependency.Name();
+
             var properties =
                 dependency.Properties(Flags.Public | Flags.Instance | Flags.Static | Flags.ExcludeHiddenMembers);
             var events = dependency.GetEvents();
             var methods = dependency.Methods(Flags.Public | Flags.Instance | Flags.Static | Flags.ExcludeHiddenMembers);
+
             Console.WriteLine(name);
+
             var childTypes = FindTypesInMembers(properties, events, methods);
             var usingStatements = BuildNamespaces(childTypes);
+
             usingStatements.Add(dependency.Namespace);
+
             await BuildInterface(dependency, properties, events, methods, usingStatements);
 
             await BuildClass(dependency, properties, events, methods, usingStatements);
