@@ -2,7 +2,7 @@
 
 This codebase is more of a Proof of Concept to work out if it is possible to unit test an Encompass plugin or how practical that sort of thing could even be. The approach is to generate interfaces and a wrapper class per type then use those throughout the codebase allowing the plugin logic to be verified initially through unit tests.
 
-The current issue I feel exists is that unit tests end up being fairly verbose when using something like moq. Though this could just come from my limited use with moq. You could most like have a standard setup for each test and use that. Maybe another library like nsubstute would be less verbose. I also would want to look into creating fake classes for each interface and then using those testing classes directly. An example that exist already is the "FakeLoanField" class.
+The current issue I feel exists is that unit tests end up being fairly verbose when using something like moq. Though this could just come from my limited use with moq. You could most likely have a standard setup for each test and use that. Maybe another library like nsubstitute would be less verbose. I also would want to look into creating fake classes for each interface and then using those testing classes directly. An example that exist already is the "FakeLoanField" class.
 
 Another caveat is that it may have a substantial perf hit. I think this is unlikely but havent tested it yet. It maybe be worth the time saved from testing.
 
